@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="A:\Full Stack\fron-end-proj\external.css">
+        <link rel="stylesheet" href="A:\Full Stack\fron-end-proj\external1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="A:\Full Stack\fron-end-proj\cart.js" async></script>
+        
+    </head>
+    <body>
+        <header>
+            <br>
+            <p>
+                Fashion Spot
+            </p>
+            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                Want it, Get It!
+            </p>
+        </header>
+        <div id="menubar" >
+            <ul style="list-style: none;" id="menu">
+                <li>
+                    <a href="A:\Full Stack\fron-end-proj\index.html">Home</a>
+                    
+                </li>
+                <li>
+                    <a href="A:\Full Stack\fron-end-proj\index.html#Ethnic">Category</a>
+                </li>
+                <li>
+                    <a href="A:\Full Stack\fron-end-proj\index.html#Shopping_cart">Cart</a>
+                </li>
+                <li>
+                    <a href="A:\Full Stack\fron-end-proj\contactus.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="A:\Full Stack\fron-end-proj\aboutus.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+        <form id=formElem>
+        <div class="row">
+            <div class="col-75">
+                <div class="container">
+      
+                    <div class="row">
+                        <div class="col-50">
+                            <h3 style="text-align: center;margin-bottom: 50px;">Billing Address</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Afreen..">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="abc@gmail.com..">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                            <input type="text" id="adr" name="address" placeholder="Street Address..">
+                            <label for="city"><i class="fa fa-institution"></i> City</label>
+                            <input type="text" id="city" name="city" placeholder="Bangalore..">
+
+                        <div class="row">
+                    <div class="col-50">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" placeholder="Karnataka..">
+                </div>
+                <div class="col-50">
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" name="zip" placeholder="560032..">
+                </div>
+            </div>
+        </div>
+
+          <div class="col-50">
+            <h3 style="text-align: center;">Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Afreen..">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444..">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September..">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2025..">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352..">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    </form>
+    <a href="A:\Full Stack\fron-end-proj\index.html">        
+       <button class="btn btn-primary btn-purchase" type="button" style="background-color: transparent; color: black; "> Checkout</button>
+    </a>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <div class="footer">
+            <div class="a">
+            <p>Fashion Spot</p>
+            
+            <ul style="list-style: none;">
+                <li>
+                    <p><i class="material-icons">mail_outline</i> Mailus@mailing.in</p>
+                </li>
+                <li> 
+                <p><i class="material-icons">local_phone</i> +91 - 999999999</p>
+                </li>
+            </ul>
+            </div>
+            <div class="b" style="text-align: center;"> Customer Service
+                <ul style="list-style: none;">
+                    <li>My Account</li>
+                    <li>FAQs</li>
+                    <li>Track My Order</li>
+                    <li>Termas and Condition</li>
+                </ul>
+            </div>
+            <div class="c"> Subscribe to your newsletter and get all the information<br>
+            <br>
+            <input type="search" name="search" value="" placeholder="Search...">
+            </div>
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 3000); // Change image every 2 seconds
+            }
+            console.log("formElem");
+                        
+            
+        </script>
+           
+
+    </body>
+</html>
